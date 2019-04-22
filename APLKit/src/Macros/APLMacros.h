@@ -10,7 +10,7 @@
 #define APLMacros_h
 
 //weakSelf
-#ifndef  WEAK_SELF
+#ifndef WEAK_SELF
 #define WEAK_SELF __weak typeof(self) weakSelf = self;
 #endif
 
@@ -34,12 +34,12 @@ if (dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL) == dispatch_queue_get
 
 //单例
 #ifndef SHAREDINSTANCE_DECLARE
-#define SHAREDINSTANCE_DECLARE  +(instancetype)sharedInstance;
+#define SHAREDINSTANCE_DECLARE(Name)  +(instancetype)shared##Name;
 #endif
 
 #ifndef SHAREDINSTANCE_IMPLEMENT
-#define ASHAREDINSTANCE_IMPLEMENT(ClassName)\
-+(instancetype)sharedInstance {\
+#define ASHAREDINSTANCE_IMPLEMENT(Name, ClassName)\
++(instancetype)shared##Name {\
     static dispatch_once_t s_once;\
     static ClassName* s_instance = nil;\
     dispatch_once(&s_once, ^{\
@@ -56,10 +56,10 @@ if (dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL) == dispatch_queue_get
 //获取屏幕 宽度、高度
 #ifndef SCREEN_WIDTH
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
-#endfif
+#endif
 #ifndef SCREEN_HEIGHT
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-#endi
+#endif
 //iPhoneX
 #ifndef IsIphoneX()
 #define IsIphoneX() ([UIScreen mainScreen].bounds.size.height==812)
