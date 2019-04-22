@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		098D30DC226D60F3008C6D11 /* APLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLMacros.h; sourceTree = "<group>"; };
 		2C3E8BD8226A196100A56F0A /* APLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3E8BDB226A196100A56F0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C3E8BDC226A196100A56F0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098D30DB226D60E9008C6D11 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				098D30DC226D60F3008C6D11 /* APLMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
 		2C3E8BCF226A196100A56F0A = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +85,7 @@
 		2C3E8BF1226A1ABF00A56F0A /* src */ = {
 			isa = PBXGroup;
 			children = (
+				098D30DB226D60E9008C6D11 /* Macros */,
 				2C3E8BF2226A1B0C00A56F0A /* Promise */,
 			);
 			path = src;
