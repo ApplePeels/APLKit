@@ -7,13 +7,21 @@
 //
 
 #import "APLTestUtils.h"
+
+#import "APLTuple.h"
+
 #import "APLPromise.h"
 #import "APLPromiseDefs.h"
 
 @implementation APLTestUtils
 
-#pragma mark Promise
+#pragma mark Tuple
++ (void)testTuple {
+    APLTuple* tuple = [APLTuple tupleWithArray:@[@"aaa", @(222)]];
+    NSLog(@"tuple: %@ %@", tuple.first, tuple.second);
+}
 
+#pragma mark Promise
 ASYNC_CLASS_METHOD(testWithFunction:(NSString*)value, {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         ASYNC_RESULT(value);

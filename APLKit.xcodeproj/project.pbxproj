@@ -11,6 +11,7 @@
 		098D30FC226D720C008C6D11 /* NSTimer+APLBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30FB226D720C008C6D11 /* NSTimer+APLBlock.m */; };
 		098D3100226D738B008C6D11 /* APLMD5Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30FF226D738A008C6D11 /* APLMD5Utils.m */; };
 		098D3104226D9413008C6D11 /* APLViewControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D3103226D9413008C6D11 /* APLViewControllerUtils.m */; };
+		098D310A226DBF6C008C6D11 /* APLTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D3109226DBF6C008C6D11 /* APLTuple.m */; };
 		2C3E8BDD226A196100A56F0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E8BDC226A196100A56F0A /* AppDelegate.m */; };
 		2C3E8BE5226A196300A56F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E8BE4226A196300A56F0A /* Assets.xcassets */; };
 		2C3E8BE8226A196300A56F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E8BE6226A196300A56F0A /* LaunchScreen.storyboard */; };
@@ -29,6 +30,8 @@
 		098D30FF226D738A008C6D11 /* APLMD5Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLMD5Utils.m; sourceTree = "<group>"; };
 		098D3102226D9413008C6D11 /* APLViewControllerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLViewControllerUtils.h; sourceTree = "<group>"; };
 		098D3103226D9413008C6D11 /* APLViewControllerUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLViewControllerUtils.m; sourceTree = "<group>"; };
+		098D3108226DBF6C008C6D11 /* APLTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLTuple.h; sourceTree = "<group>"; };
+		098D3109226DBF6C008C6D11 /* APLTuple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLTuple.m; sourceTree = "<group>"; };
 		2C3E8BD8226A196100A56F0A /* APLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3E8BDB226A196100A56F0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C3E8BDC226A196100A56F0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		098D3107226DBF59008C6D11 /* Tuple */ = {
+			isa = PBXGroup;
+			children = (
+				098D3108226DBF6C008C6D11 /* APLTuple.h */,
+				098D3109226DBF6C008C6D11 /* APLTuple.m */,
+			);
+			path = Tuple;
+			sourceTree = "<group>";
+		};
 		2C3E8BCF226A196100A56F0A = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 				098D30ED226D7158008C6D11 /* RSA */,
 				098D30EB226D7142008C6D11 /* Timer */,
 				098D3101226D93FE008C6D11 /* ViewController */,
+				098D3107226DBF59008C6D11 /* Tuple */,
 				2C3E8BF2226A1B0C00A56F0A /* Promise */,
 			);
 			path = src;
@@ -223,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				098D3104226D9413008C6D11 /* APLViewControllerUtils.m in Sources */,
+				098D310A226DBF6C008C6D11 /* APLTuple.m in Sources */,
 				2C3E8BEB226A196300A56F0A /* main.m in Sources */,
 				2C3E8BDD226A196100A56F0A /* AppDelegate.m in Sources */,
 				098D30FC226D720C008C6D11 /* NSTimer+APLBlock.m in Sources */,

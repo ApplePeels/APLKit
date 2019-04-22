@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [APLTestUtils testTuple];
+    
     [APLTestUtils testPromise];
     
     return YES;

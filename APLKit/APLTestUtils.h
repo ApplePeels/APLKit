@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APLTestUtils : NSObject
 
++ (void)testTuple;
+
 + (void)testPromise;
 
 @end
