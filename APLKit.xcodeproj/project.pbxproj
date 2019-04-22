@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		098D30F0226D7176008C6D11 /* APLRSAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30EF226D7176008C6D11 /* APLRSAUtils.m */; };
+		098D30F6226D719F008C6D11 /* UIImage+APLClip.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30F5226D719F008C6D11 /* UIImage+APLClip.m */; };
+		098D30F9226D71FC008C6D11 /* NSString+APLMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30F8226D71FC008C6D11 /* NSString+APLMD5.m */; };
+		098D30FC226D720C008C6D11 /* NSTimer+APLBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30FB226D720C008C6D11 /* NSTimer+APLBlock.m */; };
 		2C3E8BDD226A196100A56F0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E8BDC226A196100A56F0A /* AppDelegate.m */; };
 		2C3E8BE5226A196300A56F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E8BE4226A196300A56F0A /* Assets.xcassets */; };
 		2C3E8BE8226A196300A56F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E8BE6226A196300A56F0A /* LaunchScreen.storyboard */; };
@@ -17,6 +21,14 @@
 
 /* Begin PBXFileReference section */
 		098D30DC226D60F3008C6D11 /* APLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLMacros.h; sourceTree = "<group>"; };
+		098D30EE226D7176008C6D11 /* APLRSAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLRSAUtils.h; sourceTree = "<group>"; };
+		098D30EF226D7176008C6D11 /* APLRSAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLRSAUtils.m; sourceTree = "<group>"; };
+		098D30F4226D719F008C6D11 /* UIImage+APLClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+APLClip.h"; sourceTree = "<group>"; };
+		098D30F5226D719F008C6D11 /* UIImage+APLClip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+APLClip.m"; sourceTree = "<group>"; };
+		098D30F7226D71FC008C6D11 /* NSString+APLMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+APLMD5.h"; sourceTree = "<group>"; };
+		098D30F8226D71FC008C6D11 /* NSString+APLMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+APLMD5.m"; sourceTree = "<group>"; };
+		098D30FA226D720C008C6D11 /* NSTimer+APLBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+APLBlock.h"; sourceTree = "<group>"; };
+		098D30FB226D720C008C6D11 /* NSTimer+APLBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+APLBlock.m"; sourceTree = "<group>"; };
 		2C3E8BD8226A196100A56F0A /* APLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3E8BDB226A196100A56F0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C3E8BDC226A196100A56F0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +60,42 @@
 				098D30DC226D60F3008C6D11 /* APLMacros.h */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		098D30EA226D7125008C6D11 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				098D30F7226D71FC008C6D11 /* NSString+APLMD5.h */,
+				098D30F8226D71FC008C6D11 /* NSString+APLMD5.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		098D30EB226D7142008C6D11 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				098D30FA226D720C008C6D11 /* NSTimer+APLBlock.h */,
+				098D30FB226D720C008C6D11 /* NSTimer+APLBlock.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		098D30EC226D7153008C6D11 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				098D30F4226D719F008C6D11 /* UIImage+APLClip.h */,
+				098D30F5226D719F008C6D11 /* UIImage+APLClip.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		098D30ED226D7158008C6D11 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				098D30EE226D7176008C6D11 /* APLRSAUtils.h */,
+				098D30EF226D7176008C6D11 /* APLRSAUtils.m */,
+			);
+			path = RSA;
 			sourceTree = "<group>";
 		};
 		2C3E8BCF226A196100A56F0A = {
@@ -85,6 +133,10 @@
 		2C3E8BF1226A1ABF00A56F0A /* src */ = {
 			isa = PBXGroup;
 			children = (
+				098D30ED226D7158008C6D11 /* RSA */,
+				098D30EC226D7153008C6D11 /* Image */,
+				098D30EB226D7142008C6D11 /* Timer */,
+				098D30EA226D7125008C6D11 /* String */,
 				098D30DB226D60E9008C6D11 /* Macros */,
 				2C3E8BF2226A1B0C00A56F0A /* Promise */,
 			);
@@ -172,8 +224,12 @@
 			files = (
 				2C3E8BEB226A196300A56F0A /* main.m in Sources */,
 				2C3E8BDD226A196100A56F0A /* AppDelegate.m in Sources */,
+				098D30FC226D720C008C6D11 /* NSTimer+APLBlock.m in Sources */,
+				098D30F9226D71FC008C6D11 /* NSString+APLMD5.m in Sources */,
 				2C3E8BF6226A1B4200A56F0A /* APLPromise.m in Sources */,
+				098D30F6226D719F008C6D11 /* UIImage+APLClip.m in Sources */,
 				2C3E8BFA226A1B8100A56F0A /* APLTestUtils.m in Sources */,
+				098D30F0226D7176008C6D11 /* APLRSAUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
