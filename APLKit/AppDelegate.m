@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  APLKit
 //
-//  Created by 苹果皮 on 2019/4/19.
-//  Copyright © 2019年 AiJia. All rights reserved.
+//  Created by ApplePeel on 2019/4/19.
+//  Copyright © 2019年 ApplePeel. All rights reserved.
 //
 
 #import "AppDelegate.h"

@@ -2,8 +2,8 @@
 //  APLTestUtils.m
 //  APLKit
 //
-//  Created by 苹果皮 on 2019/4/19.
-//  Copyright © 2019年 AiJia. All rights reserved.
+//  Created by ApplePeel on 2019/4/19.
+//  Copyright © 2019年 ApplePeel. All rights reserved.
 //
 
 #import "APLTestUtils.h"
@@ -40,13 +40,14 @@ ASYNC_CLASS_METHOD(testWithFunction:(NSString*)value, {
             });
         }];
         NSLog(@"ret1 %@", ret1);
-        id ret2 = [promise await:^(APLPromiseResult result) {
+        APLTuple* tupleRet = [promise await:^(APLPromiseResult result) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 index++;
-                result(@(index));
+                APLTuple* tuple = [APLTuple tupleWithArray:@[@"1111", @(222)]];
+                result(tuple);
             });
         }];
-        NSLog(@"ret2 %@", ret2);
+        NSLog(@"retTuple %@  %ld", tupleRet.first, [tupleRet.second integerValue]);
         
         NSLog(@"index:%ld", index);
     }];

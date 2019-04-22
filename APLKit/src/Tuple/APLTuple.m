@@ -2,8 +2,8 @@
 //  APLTuple.m
 //  APLKit
 //
-//  Created by wangxingming on 2019/4/22.
-//  Copyright © 2019 AiJia. All rights reserved.
+//  Created by ApplePeel on 2019/4/22.
+//  Copyright © 2019 ApplePeel. All rights reserved.
 //
 
 #import "APLTuple.h"

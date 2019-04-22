@@ -2,8 +2,8 @@
 //  APLMacros.h
 //  APLKit
 //
-//  Created by wangxingming on 2019/4/22.
-//  Copyright © 2019 AiJia. All rights reserved.
+//  Created by ApplePeel on 2019/4/22.
+//  Copyright © 2019 ApplePeel. All rights reserved.
 //
 
 #ifndef APLMacros_h
@@ -53,13 +53,16 @@ if (dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL) == dispatch_queue_get
 #ifndef NAVGATION_HEIGHT
 #define NAVGATION_HEIGHT    ([UIScreen mainScreen].bounds.size.height==812?88:64)
 #endif
+
 //获取屏幕 宽度、高度
 #ifndef SCREEN_WIDTH
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #endif
+
 #ifndef SCREEN_HEIGHT
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #endif
+
 //iPhoneX
 #ifndef IsIphoneX()
 #define IsIphoneX() ([UIScreen mainScreen].bounds.size.height==812)

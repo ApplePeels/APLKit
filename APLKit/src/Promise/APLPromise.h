@@ -2,8 +2,8 @@
 //  APLPromise.h
 //  APLPromise
 //
-//  Created by wangxingming on 2019/4/16.
-//  Copyright © 2019 wangxingming. All rights reserved.
+//  Created by ApplePeel on 2019/4/16.
+//  Copyright © 2019 ApplePeel. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

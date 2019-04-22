@@ -2,8 +2,8 @@
 //  APLPromiseDefs.h
 //  APLPromise
 //
-//  Created by wangxingming on 2019/4/19.
-//  Copyright © 2019 wangxingming. All rights reserved.
+//  Created by ApplePeel on 2019/4/19.
+//  Copyright © 2019 ApplePeel. All rights reserved.
 //
 
 #ifndef APLPromiseDefs_h

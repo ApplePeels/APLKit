@@ -2,8 +2,8 @@
 //  APLMD5Utils.m
 //  APLKit
 //
-//  Created by wangxingming on 2019/4/22.
-//  Copyright © 2019 AiJia. All rights reserved.
+//  Created by ApplePeel on 2019/4/22.
+//  Copyright © 2019 ApplePeel. All rights reserved.
 //
 
 #import "APLMD5Utils.h"
@@ -32,9 +32,8 @@
 }
 
 + (NSString*)md5WithData:(NSData*)data {
-    
-    
-    return @"";
+    NSString * dataStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return [self md5WithStr:dataStr];
 }
 
 @end
