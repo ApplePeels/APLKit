@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSTimer *)apl_scheduledWithTimeInterval:(NSTimeInterval)interval block:(void(^)(void))block repeats:(BOOL)repeats;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

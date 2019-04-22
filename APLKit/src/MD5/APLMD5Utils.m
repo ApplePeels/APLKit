@@ -1,20 +1,20 @@
 //
-//  NSString+APLMD5.m
+//  APLMD5Utils.m
 //  APLKit
 //
 //  Created by wangxingming on 2019/4/22.
 //  Copyright © 2019 AiJia. All rights reserved.
 //
 
-#import "NSString+APLMD5.h"
+#import "APLMD5Utils.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation NSString (APLMD5)
+@implementation APLMD5Utils
 
-- (NSString*)apl_MD5Hash {
++ (NSString*)md5WithStr:(NSString*)str {
     CC_MD5_CTX md5;
     CC_MD5_Init(&md5);
-    CC_MD5_Update(&md5, [self UTF8String], (CC_LONG)[self length]);
+    CC_MD5_Update(&md5, [str UTF8String], (CC_LONG)[str length]);
     
     unsigned char digest[CC_MD5_DIGEST_LENGTH];
     CC_MD5_Final (digest, &md5);
@@ -29,6 +29,12 @@
                          digest[14], digest[15]];
     
     return [MD5Hash uppercaseString];
+}
+
++ (NSString*)md5WithData:(NSData*)data {
+    
+    
+    return @"";
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  NSString+APLMD5.h
+//  APLMD5Utils.h
 //  APLKit
 //
 //  Created by wangxingming on 2019/4/22.
@@ -10,9 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (APLMD5)
+@interface APLMD5Utils : NSObject
 
-- (NSString*)apl_MD5Hash;
++ (NSString*)md5WithStr:(NSString*)str;
++ (NSString*)md5WithData:(NSData*)data;
 
 @end
 

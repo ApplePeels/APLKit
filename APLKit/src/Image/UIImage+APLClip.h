@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIImage*)apl_masksToBounds:(CGFloat)cornerRaduis;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

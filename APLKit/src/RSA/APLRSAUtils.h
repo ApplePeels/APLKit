@@ -16,7 +16,7 @@
 + (NSString *)encryptString:(NSString *)str publicKey:(NSString *)pubKey;
 + (NSString *)encryptString:(NSString *)str privateKey:(NSString *)privKey;
 
-//加密
+//解密
 + (NSData *)decryptData:(NSData *)data publicKey:(NSString *)pubKey;
 + (NSData *)decryptData:(NSData *)data privateKey:(NSString *)privKey;
 + (NSString *)decryptString:(NSString *)str publicKey:(NSString *)pubKey;
