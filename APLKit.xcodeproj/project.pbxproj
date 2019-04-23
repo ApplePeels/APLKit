@@ -193,7 +193,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = AiJia;
+				ORGANIZATIONNAME = ApplePeel;
 				TargetAttributes = {
 					2C3E8BD7226A196100A56F0A = {
 						CreatedOnToolsVersion = 10.0;
