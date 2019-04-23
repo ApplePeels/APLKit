@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		098D30F0226D7176008C6D11 /* APLRSAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30EF226D7176008C6D11 /* APLRSAUtils.m */; };
-		098D30FC226D720C008C6D11 /* NSTimer+APLBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30FB226D720C008C6D11 /* NSTimer+APLBlock.m */; };
 		098D3100226D738B008C6D11 /* APLMD5Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D30FF226D738A008C6D11 /* APLMD5Utils.m */; };
 		098D3104226D9413008C6D11 /* APLViewControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D3103226D9413008C6D11 /* APLViewControllerUtils.m */; };
 		098D310A226DBF6C008C6D11 /* APLTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D3109226DBF6C008C6D11 /* APLTuple.m */; };
+		098D310D226E9EB8008C6D11 /* APLTimerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D310C226E9EB8008C6D11 /* APLTimerUtils.m */; };
 		2C3E8BDD226A196100A56F0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E8BDC226A196100A56F0A /* AppDelegate.m */; };
 		2C3E8BE5226A196300A56F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E8BE4226A196300A56F0A /* Assets.xcassets */; };
 		2C3E8BE8226A196300A56F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E8BE6226A196300A56F0A /* LaunchScreen.storyboard */; };
@@ -24,14 +24,14 @@
 		098D30DC226D60F3008C6D11 /* APLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLMacros.h; sourceTree = "<group>"; };
 		098D30EE226D7176008C6D11 /* APLRSAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLRSAUtils.h; sourceTree = "<group>"; };
 		098D30EF226D7176008C6D11 /* APLRSAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLRSAUtils.m; sourceTree = "<group>"; };
-		098D30FA226D720C008C6D11 /* NSTimer+APLBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+APLBlock.h"; sourceTree = "<group>"; };
-		098D30FB226D720C008C6D11 /* NSTimer+APLBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+APLBlock.m"; sourceTree = "<group>"; };
 		098D30FE226D738A008C6D11 /* APLMD5Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLMD5Utils.h; sourceTree = "<group>"; };
 		098D30FF226D738A008C6D11 /* APLMD5Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLMD5Utils.m; sourceTree = "<group>"; };
 		098D3102226D9413008C6D11 /* APLViewControllerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLViewControllerUtils.h; sourceTree = "<group>"; };
 		098D3103226D9413008C6D11 /* APLViewControllerUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLViewControllerUtils.m; sourceTree = "<group>"; };
 		098D3108226DBF6C008C6D11 /* APLTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLTuple.h; sourceTree = "<group>"; };
 		098D3109226DBF6C008C6D11 /* APLTuple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLTuple.m; sourceTree = "<group>"; };
+		098D310B226E9EB8008C6D11 /* APLTimerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLTimerUtils.h; sourceTree = "<group>"; };
+		098D310C226E9EB8008C6D11 /* APLTimerUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLTimerUtils.m; sourceTree = "<group>"; };
 		2C3E8BD8226A196100A56F0A /* APLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3E8BDB226A196100A56F0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C3E8BDC226A196100A56F0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 		098D30EB226D7142008C6D11 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				098D30FA226D720C008C6D11 /* NSTimer+APLBlock.h */,
-				098D30FB226D720C008C6D11 /* NSTimer+APLBlock.m */,
+				098D310B226E9EB8008C6D11 /* APLTimerUtils.h */,
+				098D310C226E9EB8008C6D11 /* APLTimerUtils.m */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -239,11 +239,11 @@
 				098D310A226DBF6C008C6D11 /* APLTuple.m in Sources */,
 				2C3E8BEB226A196300A56F0A /* main.m in Sources */,
 				2C3E8BDD226A196100A56F0A /* AppDelegate.m in Sources */,
-				098D30FC226D720C008C6D11 /* NSTimer+APLBlock.m in Sources */,
 				2C3E8BF6226A1B4200A56F0A /* APLPromise.m in Sources */,
 				098D3100226D738B008C6D11 /* APLMD5Utils.m in Sources */,
 				2C3E8BFA226A1B8100A56F0A /* APLTestUtils.m in Sources */,
 				098D30F0226D7176008C6D11 /* APLRSAUtils.m in Sources */,
+				098D310D226E9EB8008C6D11 /* APLTimerUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

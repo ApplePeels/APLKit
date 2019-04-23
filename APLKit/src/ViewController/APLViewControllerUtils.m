@@ -10,7 +10,7 @@
 
 @implementation APLViewControllerUtils
 
-+ (UIViewController*)getTopViewController {
++ (UIViewController*)topViewController {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     UIViewController *topViewController = keyWindow.rootViewController;
     while (topViewController.presentedViewController) {

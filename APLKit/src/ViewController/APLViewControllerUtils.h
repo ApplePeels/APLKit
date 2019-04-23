@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APLViewControllerUtils : NSObject
 
-+ (UIViewController*)getTopViewController;
++ (UIViewController*)topViewController;
 
 @end
 
