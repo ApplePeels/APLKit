@@ -40,7 +40,6 @@
 		2C3E8BE9226A196300A56F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C3E8BEA226A196300A56F0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C3E8BF3226A1B4200A56F0A /* APLPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLPromise.m; sourceTree = "<group>"; };
-		2C3E8BF4226A1B4200A56F0A /* APLPromiseDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLPromiseDefs.h; sourceTree = "<group>"; };
 		2C3E8BF5226A1B4200A56F0A /* APLPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLPromise.h; sourceTree = "<group>"; };
 		2C3E8BF8226A1B8100A56F0A /* APLTestUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLTestUtils.h; sourceTree = "<group>"; };
 		2C3E8BF9226A1B8100A56F0A /* APLTestUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLTestUtils.m; sourceTree = "<group>"; };
@@ -161,7 +160,6 @@
 			children = (
 				2C3E8BF5226A1B4200A56F0A /* APLPromise.h */,
 				2C3E8BF3226A1B4200A56F0A /* APLPromise.m */,
-				2C3E8BF4226A1B4200A56F0A /* APLPromiseDefs.h */,
 			);
 			path = Promise;
 			sourceTree = "<group>";

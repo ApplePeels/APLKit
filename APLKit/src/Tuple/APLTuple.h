@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APLTuple : NSObject
 
++ (instancetype)tuple;
 + (instancetype)tupleWithArray:(NSArray*)tupleArray;
+
+- (APLTuple*)addObj:(id)object;
 
 @property (nonatomic, strong, readonly) id first;
 @property (nonatomic, strong, readonly) id second;

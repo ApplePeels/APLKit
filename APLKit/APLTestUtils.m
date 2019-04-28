@@ -11,7 +11,6 @@
 #import "APLTuple.h"
 
 #import "APLPromise.h"
-#import "APLPromiseDefs.h"
 
 @implementation APLTestUtils
 

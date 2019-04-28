@@ -9,15 +9,28 @@
 #import "APLTuple.h"
 
 @interface APLTuple ()
-@property (nonatomic, strong) NSArray* tupleDataSource;
+@property (nonatomic, strong) NSMutableArray* tupleDataSource;
 @end
 
 @implementation APLTuple
 
++ (instancetype)tuple {
+    APLTuple* tuple = [[APLTuple alloc] init];
+    tuple.tupleDataSource = [NSMutableArray array];
+    return tuple;
+}
+
 + (instancetype)tupleWithArray:(NSArray*)tupleArray {
     APLTuple* tuple = [[APLTuple alloc] init];
-    tuple.tupleDataSource = tupleArray;
+    tuple.tupleDataSource = tupleArray.mutableCopy;
     return tuple;
+}
+
+- (APLTuple*)addObj:(id)object {
+    if (object) {
+        [self.tupleDataSource addObject:object];
+    }
+    return self;
 }
 
 - (id)first {
