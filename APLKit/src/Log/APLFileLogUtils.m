@@ -52,6 +52,11 @@ SHAREDINSTANCE_IMPLEMENT(Utils, APLFileLogUtils)
     APLFileLogManager* logFileManager = [[APLFileLogManager alloc] initWithLogsDirectory:logPath];
     DDFileLogger* fileLogger = [[DDFileLogger alloc] initWithLogFileManager:logFileManager];
     
+    fileLogger.maximumFileSize = 1024 * 1024 * 8;               // 最大8MB
+    fileLogger.rollingFrequency = 60 * 60 * 24;                 // 24Hours
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;      // 5天的日志
+    
+    
     self.fileLoggerDic[logType] = fileLogger;
 }
 
