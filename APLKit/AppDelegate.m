@@ -22,6 +22,7 @@
     
     [APLTestUtils testPromise];
     
+    [APLTestUtils testLog];
     return YES;
 }
 

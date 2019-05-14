@@ -38,7 +38,7 @@ if (dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL) == dispatch_queue_get
 #endif
 
 #ifndef SHAREDINSTANCE_IMPLEMENT
-#define ASHAREDINSTANCE_IMPLEMENT(Name, ClassName)\
+#define SHAREDINSTANCE_IMPLEMENT(Name, ClassName)\
 +(instancetype)shared##Name {\
     static dispatch_once_t s_once;\
     static ClassName* s_instance = nil;\

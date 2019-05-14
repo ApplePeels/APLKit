@@ -8,9 +8,15 @@
 
 #import "APLTestUtils.h"
 
-#import "APLTuple.h"
+#import "APLFileLogDefs.h"
+#import "APLFileLogUtils.h"
 
+#import "APLTuple.h"
 #import "APLPromise.h"
+
+
+#define AAA_Log(frmt, ...) APLFileLog([APLFileLogUtils getFileLogger:@"aaa"], frmt, ##__VA_ARGS__)
+
 
 @implementation APLTestUtils
 
@@ -52,4 +58,12 @@ ASYNC_CLASS_METHOD(testWithFunction:(NSString*)value, {
     }];
 }
 
++ (void)testLog {
+    [APLFileLogUtils registerLogType:@"aaa"];
+    [APLFileLogUtils registerLogType:@"bbb"];
+    NSLog(@"log dir:%@", [APLFileLogUtils getLogFileDir]);
+    
+    AAA_Log(@"test marcor:%@", @"complete");
+    
+}
 @end
