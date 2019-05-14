@@ -10,4 +10,16 @@
 
 @implementation APLFileLogManager
 
+- (NSString *)newLogFileName {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSUInteger unitFlag = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute;
+    NSDateComponents* curTimeComponents = [calendar components:unitFlag fromDate:[NSDate date]];
+    NSString* logFileName = [NSString stringWithFormat:@"%ld-%02ld-%02ld %02ld:%02ld.log", curTimeComponents.year, curTimeComponents.month, curTimeComponents.day, curTimeComponents.hour, curTimeComponents.minute];
+    return logFileName;
+}
+
+- (BOOL)isLogFile:(NSString *)fileName {
+    return YES;
+}
+
 @end
